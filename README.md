@@ -3,5 +3,4 @@
 ## local
 ### open : npm run my-server
 
-## global
-### open : my-server
+## put your files in codes
