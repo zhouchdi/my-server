@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: 13px "Helvetica Neue", "Lucida Grande", "Arial";
+}
+
+body {
+  margin: 2%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  outline: none;
+  color: #000000;
+  text-decoration: none;
+}
+
+input {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 90px;
+  transition: width ease 0.2s, opacity ease 0.4s;
+  border-radius: 32px;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.25),
+    inset 0px 1px 3px rgba(0, 0, 0, 0.7), 0px 1px 0px rgba(255, 255, 255, 0.03);
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  padding: 4px 10px;
+  border: none;
+  background: transparent;
+  outline: none;
+  opacity: 0.7;
+  color: #888;
+}
+
+input:focus {
+  width: 120px;
+  opacity: 1;
+}
+
+div.wrapper {
+  margin: 0 10%;
+  margin-top: 70px;
+}
+
+.wrapper > h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.wrapper > h1 > a {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.wrapper ul:after {
+  content: "";
+  height: 0;
+  clear: both;
+}
+
+.wrapper ul li {
+  width: 33%;
+  float: left;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wrapper ul li a {
+  line-height: 25px;
+  font-weight: 600;
+}
