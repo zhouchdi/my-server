@@ -2,11 +2,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font: 13px "Helvetica Neue", "Lucida Grande", "Arial";
+  font: 20px "Helvetica Neue", "Lucida Grande", "Arial";
 }
 
 body {
   margin: 2%;
+  background: rgba(236,233,233,.5)
 }
 
 ul,
@@ -68,16 +69,29 @@ div.wrapper {
 }
 
 .wrapper ul li {
-  width: 33%;
+  width: 31%;
   float: left;
+  padding-left: 1%;
   border: 1px solid transparent;
   border-radius: 5px;
-  height: 25px;
+  height: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
+}
+.wrapper ul li:not(:nth-child(3n)) {
+  margin-right: 2%;
+}
+
+.wrapper ul li:hover {
+  background: rgba(255, 255, 255, 1);
 }
 
 .wrapper ul li a {
-  line-height: 25px;
+  line-height: 30px;
   font-weight: 600;
+}
+.wrapper ul li.highlight{
+  background: #ffff4f;
+  border-color: #E9DC51;
 }
